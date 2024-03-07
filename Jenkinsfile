@@ -16,10 +16,11 @@ stages {
                     echo 'Deploying.... app'
                     }
                 }
+        }
   post{
           always{
               emailext body: 'Build Success fully Done...!!!', subject: 'Pipeline Status', to: 'ganeshpasupuleti2211@gmail.com'
                 }
             }
         }
-    }
+    
